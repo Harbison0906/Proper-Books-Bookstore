@@ -1,0 +1,19 @@
+// $theme-colors: (
+//     'primary': #0091ea //Covalence Blue!  :D
+// );
+
+.jumbotron {
+    background-color: #297373;
+  }
+
+  .logo {
+    font-family: 'Cinzel', serif;
+    letter-spacing: 3px;
+    color: whitesmoke;
+  }
+
+  h5, h6, p {
+    font-family: 'Roboto', sans-serif;
+  }
+
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
