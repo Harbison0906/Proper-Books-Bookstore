@@ -10,6 +10,7 @@ import Login from './views/Login'
 import JumboNav from './components/JumboNav';
 import Form from './components/Form'
 import { StripeProvider, Elements } from 'react-stripe-elements'
+import Email from './components/Email';
 
 export default class App extends React.Component {
 
@@ -36,6 +37,8 @@ export default class App extends React.Component {
 					<Route exact path="/login" component={Login} />
 					<Route exact path="/register" component={Register} />
 				</Switch>
+
+				<Email />
 
 			</BrowserRouter>
 		)

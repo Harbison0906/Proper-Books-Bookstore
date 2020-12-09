@@ -23,7 +23,7 @@ const sendEmail = (from: string, to: string, subject: string, content: string) =
 
 router.post('/', async (req, res, next) => {
   try {
-    await sendEmail('vandelay.industries@test.com', 'seth.harbison@gmail.com', 'TEST EMAIL', req.body.message)
+    await sendEmail(req.body.email, 'seth.harbison@gmail.com', req.body.subject, req.body.message)
     res.send('Email successfully sent!');
   } catch (error) {
     console.log(error);
